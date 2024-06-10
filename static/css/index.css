@@ -1,0 +1,392 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  position: relative;
+}
+
+.results-carousel .item {
+  flex: 0 0 100%;
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel .video {
+  margin: 0;
+}
+.results-carousel .item.active {
+  display: block; 
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+
+.columns {
+    display: flex; 
+    flex-wrap: wrap; 
+    overflow-x: hidden; 
+    align-items: stretch; 
+    justify-content: center; 
+    margin-right: -10px;
+}
+
+.column {
+    flex: 1 1 auto; 
+    margin-right: 5px; 
+    padding: 0 5px; 
+    box-sizing: border-box; 
+    min-width: 100; 
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+
+
+.author-block, .group-block {
+    text-align: center; 
+    margin-bottom: 5px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.author-block {
+    font-size: 0.9em;
+}
+
+.group-block {
+    font-weight: bold; 
+    font-size: 0.8em; 
+}
+
+.contribution {
+    margin-top: 10px; 
+    font-style: italic; 
+    font-size: 0.9em; 
+}
+
+
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  width: 80%; 
+  max-width: 500px;
+  height: autho; 
+  overflow: hidden; 
+  margin: 20px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.my-slider img {
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+}
+
+.my-slider img:first-child {
+  display: block; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px; 
+  height: 36px; 
+  padding: 8px; 
+  color: black; 
+  font-weight: bold;
+  font-size: 24px; 
+  transition: all 0.3s ease; 
+  background-color: white; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover, .next:hover {
+  background-color: yellow; 
+  color: black; 
+  transform: translateY(-50%) scale(1.1); 
+}
+
+.next {
+  right: 10px; 
+}
+
+.prev {
+  left: 10px; 
+}
+.video {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.hero-body {
+  width: 100%; 
+  max-width: 100%; 
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: auto;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+    .title {
+        letter-spacing: -0.02em;
+        font-size: 3vw; /* 기본 글자 크기 */
+        text-align: center;
+        margin: 0;
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            font-size: 2vw; /* 큰 화면에서는 글자 크기를 더 작게 */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .title {
+            font-size: 5vw; /* 작은 화면에서는 글자 크기를 더 크게 */
+        }
+    }
+
+          .publication-authors {
+    margin-bottom: 20px; /* 원하는 간격으로 조정 가능 */
+  }
+
+    .custom-image img {
+    max-width: 75%; /* 원하는 크기로 조정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    display: block;
+  }
+
+     .table-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      overflow-x: auto; /* 작은 화면에서 테이블이 잘리지 않고 스크롤 가능하게 함 */
+    }
+    .styled-table {
+      border-collapse: collapse;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .styled-table thead tr {
+      background-color: #009879;
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+      border: 1px solid #dddddd;
+    }
+    .styled-table tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    .styled-table tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+    .styled-table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    .highlight-row {
+      font-weight: bold;
+      background-color: #d1ffd1; /* 강조를 위한 배경색 */
+    }
+    .reference {
+      font-size: 0.8em;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 0.8em;
+      }
+      .styled-table th,
+      .styled-table td {
+        padding: 8px 10px;
+      }
+      .styled-table thead tr {
+        font-size: 1em;
+      }
+    }
+
+        .hero img.transparent-background {
+      background-color: transparent;
+    }

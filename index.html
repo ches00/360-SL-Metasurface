@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({            
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+      });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  
+  <meta charset="utf-8">
+  <meta name="description"
+        content="360° Structured Light with Learned Metasurfaces">
+  <meta name="keywords" content="360° Structured Light with Learned Metasurfaces">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>360° Structured Light with Learned Metasurfaces</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://doi.org/10.1038/s41566-024-01450-x">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 style="letter-spacing:-0.02em" class="title publication-title">360° Structured Light with Learned Metasurfaces
+            </h1>
+
+          <div class="columns is-variable is-4 is-multiline">
+            <div class="column">
+              <div class="author-block"> <a href="https://eschoi.com">Eunsue Choi*</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+
+            <div class="column">
+              <div class="author-block">  <a href="https://scholar.google.co.kr/citations?user=0rZekfsAAAAJ"> Gyeongtae Kim*</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+
+            <div class="column">
+              <div class="author-block"><a href="https://scholar.google.com/citations?user=iw2cTTYAAAAJ">Jooyeong Yun</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+
+            <div class="column">
+              <div class="author-block"> <a href="https://scholar.google.com/citations?user=M9ZnHHoAAAAJ">Yujin Jeon</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+
+
+
+            <div class="column">
+              <div class="author-block"> <a href="https://sites.google.com/site/junsukrho/">Junsuk Rho</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+
+            <div class="column">
+              <div class="author-block"> <a href="https://sites.google.com/view/shbaek/">Seung-Hwan Baek</a></div>
+              <div class="group-block">POSTECH</div>
+            </div>
+          </div>
+
+          <div class="contribution">
+            * Denotes Equal Contribution 
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="publication-venue">Nature Photonics 2024 </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.nature.com/articles/s41566-024-01450-x" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+               <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ches00/360-SL-Metasurface"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+ 
+              
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://zenodo.org/doi/10.5281/zenodo.11518074" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </span></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered">
+    <div class="hero-body">
+      <img src="./static/images/thumbnails.jpg" style="width: 100%; max-width: 900px; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        360° structured light enables 360° light projection of a computationally-designed
+pattern with a learned metasurface.
+ 
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>          
+        <div class="content has-text-justified">
+          <p>
+                Structured light has proven instrumental in 3D imaging, LiDAR, and holographic light projection. Metasurfaces, comprised of sub-wavelength-sized nanostructures, facilitate 180° field-of-view (FoV) structured light, circumventing the restricted FoV inherent in traditional optics like diffractive optical elements. However, extant metasurface-facilitated structured light exhibits sub-optimal performance in downstream tasks, due to heuristic pattern designs such as periodic dots that do not consider the objectives of the end application.
+                In this work, we present 360° structured light, driven by learned metasurfaces. 
+                We propose a differentiable framework, that encompasses a computationally-efficient 180° wave propagation model and a task-specific reconstructor, and exploits both transmission and reflection channels of the metasurface. Leveraging a first-order optimizer within our differentiable framework, we optimize the metasurface design, thereby realizing 360° structured light.
+                We have utilized 360° structured light for holographic light projection and 3D imaging. 
+                Specifically, we demonstrate the first 360° light projection of complex patterns, enabled by our propagation model that can be computationally evaluated 50,000x faster than the Rayleigh-Sommerfeld propagation.
+                For 3D imaging, we improve depth-estimation accuracy by 5.09x in RMSE compared to the heuristically-designed structured light.
+                360° structured light promises robust 360° imaging and display for robotics, extended-reality systems, and human-computer interactions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Design of 360° Structured Light</h2>
+          <div class="content has-text-justified">
+          <p>
+                We introduce an efficient wave propagation model that accurately simulates light interaction with metasurfaces, achieving over 50,000x speed-up at 512x512 resolution. This model accurately describes 180° full-space wave propagation without paraxial approximation. To achieve 360° structured light, we utilize metasurfaces in both transmission and reflection. We design 360° structured light by learning the metasurface design using a first-order opimizer for downstream tasks.
+          </p>
+                      <img src="./static/images/design360.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+
+      <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Holographic image demonstration</h2>
+          <div class="content has-text-justified">
+            <p>
+              As a proof-of-concept of applying 360° structured light, we optimize the phase map of metasurfaces Φ to produce a high-fidelity 360° light projection of a desired holographic image Y by solving the optimization problem which aims to minimize the MSE loss 
+            </p>
+            <figure class="custom-image">
+              <img src="./static/images/hologram.jpg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3"> Learning metasurfaces in End-to-End optimization</h2>
+          <p> We jointly optimize the metasurface phase map and the parameters of a depth-reconstruction neural network, yeilding an optimized 360° structured light suitable for 3D imaging. Belows are the overall framework. It consists of our full-space wave propagation model, differentiable fish-eye image formation and 360 depth reconstructor. 
+          <img src="./static/images/e2e.jpg" width="100%">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Optimization Progress: Two-stage learning</h2>
+          <p>Our approach to end-to-end optimization for 3D imaging involves two training stages. In the first stages, we simultaneously optimize the metasurface phase map and the network parameters of the depth reconstructor. Once the training of the first stage reaches convergence and the shape of the structured-light pattern stabilizes, we transition to the second stage. In the second stage, we keep the phase map of the metasurface fixed and continue optimizing the reconstructor only. </p>
+                    <video id="videoElement" controls width="1000" muted>
+              <source src="./static/videos/training.mp4" type="video/mp4">
+                ERROR: Your browser does not support the video tag. 
+              </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Our Compact Imaging system for real demonstration</h2>
+          <p> Our imaging system contains four fish-eye cameras and 360 illumination modules. It was mounted on a 3600 x 150mm<sup>2</sup> breadboard, resulting in a compact configuration.
+          </p>
+          <img src="./static/images/system.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Metasurface fabrication</h2>
+          <img src="./static/images/metasurface.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3"> Qauntitative Comparison against previous work </h2>
+  <div class="table-container">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>iMAE</th>
+          <th>iRMSE</th>
+          <th>MAE</th>
+          <th>RMSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td>360° structured light (ours)</td>
+          <td>0.165</td>
+          <td>0.319</td>
+          <td>0.035</td>
+          <td>0.041</td>
+        </tr>
+        <tr>
+          <td>Multi-dot 360° structured light<sup>1</sup></td>
+          <td>0.523</td>
+          <td>0.944</td>
+          <td>0.123</td>
+          <td>0.209</td>
+        </tr>
+        <tr>
+          <td>Passive stereo</td>
+          <td>0.633</td>
+          <td>1.08</td>
+          <td>0.652</td>
+          <td>0.807</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+                          <div class="reference">
+    <p><sup>1</sup> Kim, G., Kim, Y., Yun, J. et al. Metasurface-driven full-space structured light for three-dimensional imaging. Nat Commun 13, 5920 (2022). https://doi.org/10.1038/s41467-022-32117-2</p>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Qualitative comparisons against previous work</h2>
+          <p> The yellow box in the images corresponds to a flat and smooth floor. 360° structured light exploits the learned non-uniform features for robust 3D imaging while the super-cell method<sup>1</sup> and passive stereo struggle in recovering accurate depth. </p>
+                    <img src="./static/images/comparison.jpg" width=80% class="transparent-background">
+
+                        <div class="reference">
+    <p><sup>1</sup> Kim, G., Kim, Y., Yun, J. et al. Metasurface-driven full-space structured light for three-dimensional imaging. Nat Commun 13, 5920 (2022). https://doi.org/10.1038/s41467-022-32117-2</p>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Experimental Results of 3D Imaging </h2>
+          <p> 360° structured light enables accurate reconstruction on the six additional scenes containing various objects, including furniture, dolls, umbrellas, balls, and human subjects </p>
+                    <img src="./static/images/real_result.jpg" width=90%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://doi.org/10.1038/s41566-024-01450-x">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ches00/360-SL-Metasurface" class="external-link" disabled>
+        <i class="far fa-images"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
