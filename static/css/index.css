@@ -320,7 +320,7 @@ body {
   }
 
     .custom-image img {
-    max-width: 75%; /* 원하는 크기로 조정 */
+    max-width: 100%; /* 원하는 크기로 조정 */
     margin: 0 auto; /* 가운데 정렬 */
     display: block;
   }
@@ -389,4 +389,17 @@ body {
 
         .hero img.transparent-background {
       background-color: transparent;
+    }
+
+        /* 작은 화면에서의 스타일 */
+    @media (max-width: 768px) {
+      h2.title {
+        font-size: 2.5em; /* 작은 화면에서 더 큰 글씨 */
+      }
+      p {
+        font-size: 1.5em; /* 작은 화면에서 더 큰 글씨 */
+      }
+      .content img {
+        max_width: 100%; /* 이미지 크기를 화면 너비에 맞춤 */
+      }
     }
