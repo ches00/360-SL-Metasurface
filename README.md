@@ -1,6 +1,6 @@
 # 360° Structured Light with Learned Metasurfaces 
 
-### [Project Page](https://eschoi.com/360-SL-Metasurface/) | [Paper](https://www.nature.com/articles/s41566-024-01450-x) | [Data](https://doi.org/10.5281/zenodo.11518075)
+### [Project Page](https://eschoi.com/360-SL-Metasurface/) | [Paper](https://www.nature.com/articles/s41566-024-01450-x) | [Data](https://doi.org/10.5281/zenodo.11518075) | [Arxiv](https://arxiv.org/abs/2306.13361)
 
 [Eunsue Choi*](https://eschoi.com), [Gyeongtae Kim*](https://scholar.google.co.kr/citations?user=0rZekfsAAAAJ), [Jooyeong Yun](https://scholar.google.com/citations?user=iw2cTTYAAAAJ), [Yujin Jeon](https://scholar.google.com/citations?user=M9ZnHHoAAAAJ), [Junsuk Rho+](https://sites.google.com/site/junsukrho/), [Seung-Hwan Baek+](https://www.shbaek.com/)
 
